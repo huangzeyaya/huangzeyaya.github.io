@@ -1,0 +1,134 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+	.box{
+		width: 100%;
+		height: 100%;
+		position:relative;
+	}
+	.sun{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+		background-color: red;
+		border-radius: 50%;
+		animation: rotate 3s linear 0s infinite normal;
+	}
+	.shuixing{
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+		border: 1px solid #EAEAEA;
+		border-radius: 50%;
+		animation: rotate 2s linear 0s infinite normal;
+	}
+	.shuixing>span{
+		width: 20px;
+		height: 20px;
+		background-color: #d7edff;
+		display: block;
+		position: absolute;
+		right: -10px;
+		top:0;
+		bottom: 0;
+		margin:auto;
+		border-radius: 50%;
+	}
+	.jingxing{
+		width: 160px;
+		height: 160px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+		border: 1px solid #EAEAEA;
+		border-radius: 50%;
+		animation: rotate 3s linear 0s infinite normal;
+	}
+	.jingxing>span{
+		width: 40px;
+		height: 40px;
+		background-color: #FFC125;
+		display: block;
+		position: absolute;
+		right: -20px;
+		top:0;
+		bottom: 0;
+		margin:auto;
+		border-radius: 50%;
+	}
+	.diqiu{
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+		border: 1px solid #EAEAEA;
+		border-radius: 50%;
+		animation: rotate 4s linear 0s infinite normal;
+	}
+	.diqiu>.qiu{
+		width: 50px;
+		height: 50px;
+		background-color: #3CB371;
+		display: block;
+		position: absolute;
+		right: -25px;
+		top:0;
+		bottom: 0;
+		margin:auto;
+		border-radius: 50%;
+	}
+	.qiu>.yueqiu{
+		width: 80px;
+		height: 80px;
+		/*box-sizing: border-box;*/
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left:-40px;
+		margin-top:-40px;
+		border: 1px solid #EAEAEA;
+		border-radius: 50%;
+		animation: rotate 3s linear 0s infinite normal;
+	}
+	.qiu>.yueqiu>span{
+		width: 30px;
+		height: 30px;
+		background-color: #8B8B7A;
+		display: block;
+		position: absolute;
+		right: -15px;
+		top:0;
+		bottom: 0;
+		margin:auto;
+		border-radius: 50%;
+	}
+	@keyframes rotate{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(-360deg);
+
+			}
+		}
