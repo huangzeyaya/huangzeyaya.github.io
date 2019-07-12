@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+		.box{
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.box>.items{
+			margin: 10px 90px;
+			flex-basis: 30%;
+			/*启3d效果*/
+			transform-style: preserve-3d;
+			/*开启透视，远小近大*/
+			-webkit-perspective: 500;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		*{
+			transition: all 1s;
+		}
+
+
+			
+		/*预设样式*/
+		/*.hover代表鼠标悬浮。保留的对角悬浮*/
+		.demo1:hover>img{
+			/*transition: translateX(-250px);左右*/
+			/*transition: translateY(250px);上下*/
+			transform: translateZ(150px);
+		}
+		/*360旋转 +顺时针，-n逆时针*/
+		.demo2:hover>img{
+			transform: rotateY(360deg);
+		}
+		
+		.demo3:hover>img{
+				/*X厚度放大4倍。*/
+			/*transform: scaleX(1.5) ;*/
+				/*Y厚度放大4倍。*/
+			transform: scaleY(10) ;
+			/*Z厚度放大4倍。*/
+			/*transform: scaleZ(4) ;*/
+		}
+		/*使用矩阵*/
+		.demo5:hover>img{
+			transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+		}
+	</style>
+
+</head>
+<body>
+<div class="box">
+	<div class="items demo1">
+		<img src="./g/0.jpg">
+	</div>
+	<div class="items demo2">
+	             <img src="./g/1.jpg">
+	</div>
+	<div class="items demo3">
+		<img src="./g/2.jpg">
+	</div>
+
+	<div class="items demo5">
+		<img src="./g/4.jpg">
+	</div>
+</div>
+</body>
+</html>
